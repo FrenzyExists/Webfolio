@@ -1,2 +1,5 @@
-# me-learning-git
-My attempts to learn git cuz I suck at it
+# tutorial-git
+
+Life is hard, so are my attempts to learn git and get a job 
+
+Keep moving foward
