@@ -1,0 +1,24 @@
+/*
+* Main Stylesheet for all webpages within this project (custom default)
+*/
+
+body {
+    font: normal 1em Consolas;
+    background-color: #faf2e4;
+    margin: 6rem;
+}
+
+h1 {
+    font-family: serif;
+    font-weight: normal;
+    color: rgb(216, 122, 0);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1.5rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: rgb(216, 141, 43);
+    im
+}
