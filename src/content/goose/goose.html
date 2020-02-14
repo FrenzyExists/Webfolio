@@ -3,32 +3,38 @@
     <head>
         <meta charset="utf-16">
         <title>The Mad Goose Cafe - Home</title>
+        
+        <!-- Stylesheet -->
         <link rel="stylesheet" type="text/css" href="goose-style.css">
 
         <!-- Thanks Google! -->
-        <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:400,600|Raleway|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome kit -->
+        <script src="https://kit.fontawesome.com/e99c120c11.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
-        <header>
-            <div class="container"><img src="../../images/logo.png" alt="logo" class="logo"></div>
-            <nav>
-                <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>Hours and Location</li>
-                    <li><a href="#"></a>Menus</li>
-                    <li><a href="#"></a>Catering</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Our Story</li>
-                    <li><a href="#"></a>Events</li>
-                    <li><a href="#"></a>Reservations</li>
-                </ul>
-            </nav>
+        <header class="group" role="banner">
+            <div class="container"><img src="../../images/logo.png" alt="logo" class="logo">
+                <!-- <span class="drop-down-bar" id="navbar-toogle-js"><i class="fas fa-chevron-down"></i></span> -->
+                <nav class="navbar">
+                    <ul #id="navigation">
+                        <li><a href="../../index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Hours and Location</a></li>
+                        <li><a href="#"><i class="fas fa-utensils"></i> Menus</a></li>
+                        <li><a href="#"><i class="fas fa-coffee"></i> Our Story</a></li>
+                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                        <li><a href="#"><i class="fas fa-bookmark"></i> Reservations</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
+        
 
 
-        <h1 class="title"><img id="goose" src="../../images/goose.png"><br> Mad Goose Cafe</h1>
+        <h1 class="title"><img id="goose" src="../../images/goose.png"><br> <em>We're all mad over here </em></h1>
         <hr>
         <br>
 
@@ -43,5 +49,61 @@
         <p>Lonsdale Avenue, Vancouver;<br>
         Monday through Thursday 11am to 9pm, Friday and Saturday, 11am to midnight</p>
 
+
+        <!----------------- BANNERS --------------- -->
+        <div class="banners">
+            <div>
+                <h3>Insert Text over here</h3>
+                <ul class="banner-list">
+                    <li id="-coffee-banner">
+                        <a href=""><img src="../../images/Coffee-Animated-s.gif" alt="coffee-banner" Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello ></a></li>
+                    <li id="-party-banner"><a href=""><img src="../../images/disco-party-banner.gif" alt="party-banner"></a></li>
+                    <li id="-coffee-shop-banner"><a href=""><img src="../../images/coffee-shop-banner.webp" alt="coffee-shop-banner"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!----------------- FOOTER --------------- -->
+        <div class="-footer">
+            <div class="container-center-text">
+                <h3>Subscribe to our newsletter to catch up with upcomming events</h3>
+                <form class="subscribe-form">
+
+                    <div class="form-outer-container-Name">
+                        <div class="control">
+                            <input class="control-form" name="user-name" placeholder="Name" type="text" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-outer-container-Email">
+                        <div class="control">
+                            <input class="control-form"  name="user-email" placeholder="Email Address" type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="form-outer-container-buttom">
+                        <div class="control">
+                            <button class="buttom-submit" name="submit">Submit<i class="arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                </form>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-tumblr-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                </ul>
+                <hr #id="footer-diviion">
+                <p class="copyright">"Copyright 2020 Mad Goose - No Rights Reserved"</p>
+                <div class="i-made-it">
+                    <p>Designed with <i class="fa fa-heart-o"></i> By Frenzy</p>
+                </div>
+            </div>
+        
+        </div>
+<!-- Font Awesome -->
+        <!-- Js script -->
+        <script src="script.js"></script>
     </body>
 </html> 

@@ -9,7 +9,7 @@
             "request": "launch",
             "reAttach": true,
             "name": "Launch index.html",
-            "file": "${workspaceFolder}/index.html"
+            "file": "/home/frenzy/Documents/my-web-projects/me-learning-git/src/content/goose/goose.html"
         }
 
 

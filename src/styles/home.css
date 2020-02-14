@@ -4,10 +4,12 @@
 
 body {
     font: normal 1em Consolas;
-    padding-left: 15%;
+    margin: 0;
+    /* padding-left: 15%;
     padding-right: 15%;
     margin-top: 4.6em;
-    margin-bottom: 5em;
+    margin-bottom: 5em; */
+
 
 
 }
