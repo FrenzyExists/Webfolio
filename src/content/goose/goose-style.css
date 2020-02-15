@@ -14,7 +14,7 @@
 }
 
 body, html {
-    font: normal 1em Consolas;
+    font: normal 1em 'Work Sans', sans-serif;
     background-color: #faf2e4;
 }
 
@@ -83,9 +83,6 @@ nav {
 
 }
 
-.navbar {
-
-}
 
 nav ul {
     margin:0;
@@ -97,7 +94,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 30px;
-    padding-top: 10px;
+    padding-top: 16px;
 
     position: relative;
     
@@ -138,7 +135,11 @@ width: 100%;
     padding-right: 20px;
 }
 
-
+h3 {
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
 /* ------------------------- BANNERS ------------------------- */
 
@@ -227,22 +228,33 @@ width: 100%;
 
 /* ------------------------- FOOTER ------------------------- */
 
-.-footer {
+.-footer, .push {
+
     background-color: coral;
     border-top: 1px solid gray;
     padding: 30px 0;
+    flex-shrink: 0;
 }
 
+
+
 .copyright {
+
     font-size: 12px;
     line-height: 30px;
-    text-align: center;
+    
+    margin-top: 2rem;
+
+    display:flex;
+    justify-content: center;
 }
 
 .i-made-it {
     font-size: 12px;
     line-height: 30px;
-    text-align: center;
+
+    display:flex;
+    justify-content: center;
 }
 
 /* ------------------------- FORM ------------------------- */
@@ -260,7 +272,8 @@ width: 100%;
 
 
 .-footer {
-    text-align: center;
+    display:flex;
+    justify-content: center;
 }
 
 .-footer .container-center-text  {
@@ -280,9 +293,11 @@ width: 100%;
     margin-left: 2.1rem;
 }
 
+/* INPUT */
 .control-form {
     /* margin: 60px; */
-    padding: 0.51rem;
+    /* padding: 0.51rem; */
+    padding: 9px;
 
     font-family: Tahoma, sans-serif;
     font-size: 16px;
@@ -290,9 +305,15 @@ width: 100%;
     width: 400px;
 
 
-    border: 1px #000 solid;
+
+    border: 1px dimgray solid;
     box-sizing: border-box;
     outline: none;
+
+    transition: 0.5s;
+
+    padding-left: 3rem;
+    
     
 }
 
@@ -301,22 +322,81 @@ width: 100%;
     box-shadow: 0 0 8px 0 dodgerblue;
 }
 
+.control i{
+    position: absolute;
+    
+    background-color: dimgray;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 500px 4px 4px 500px;
+    padding: 9px 10px; 
+    /* margin-right: 1px; */
+    display: inline-block;
+    margin-left: -25rem;
+    transition: 0.5s;
+}
 
+
+.control input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+}
+
+/* input[type="text"]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  } */
+
+  /* .inputWithIcon.inputIconBg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 11px 4px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerBlue;
+  } */
+
+
+/* BUTTOM  */
 
 .buttom-submit {
     border-radius: 500px;
     padding: 0.51rem 2rem;
     font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #62666b;
+    color: whitesmoke;
+    border: 0;
+
 }
 
+.buttom-submit span {
+    cursor: pointer;
+
+}
+
+.buttom-submit spam:hover {
+    transition: 0.6s;
+}
+
+.buttom-submit spam:after {
+    
+}
 
 /* -------------------| SOCIAL LINKS |------------------- */
 
 .-footer .container-center-text .social-links {
-    /* display: flex; */
 
     list-style: none;
-    float: right;
+    
+    display:flex;
+    justify-content: center;
+    
+    
+    
 }
 
 
@@ -325,66 +405,16 @@ width: 100%;
     margin-left: 2rem;
 
     position: relative;
-
+    
     font-size: 4.5rem;
+
+    
+    
     
 }
 
 .-footer .container-center-text .social-links a{
+    color: dimgray;
     text-decoration: none;
 }
 
-
-
-.i-made-it {
-    text-align: center;
-}
-
-/* 
-#footer {
-    margin:0 auto;
-    padding: 0 10px;
-    width: 940px;
-}
-
-#-footer div {
-    overflow: hidden;
-    padding:45px 0 0;
-}
-
-#-footer div #newstuff {
-   float: left;
-    position: relative;
-    width: 70%;
-
-}
-
-#-footer div #newstuff h2 {
-    font-size: 20px;
-    padding: 0;
-    width: 40%;
-
-}
-#-footer div #newstuff #newstuff-description{
-    width: 40%;
-}
-
-#-footer div #newstuff form {
-    margin:0;
-    left : 45%;
-    position: absolute;
-    top: 27px;
-
-
-}
-
-
-#-footer div #newstuff form input {
-    background:cornflowerblue;
-    border: none;
-    border-radius: 18px;
-    font-size: 12px;
-    padding: 0 10px;
-    line-height: 37px;
-    width:280px
-} */
