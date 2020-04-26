@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium:500|Orbitron:400,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Scoreboard</h1>
+        <div class="scoreboard">
+
+            <div class="team" id="teamA">
+                <span id="team-a-score"></span>
+                <h3>Team A</h3>
+            </div>
+
+
+            <div>-</div>
+
+            <div class="team" id="teamB">
+                <span id="team-b-score"></span>
+                <h3>Team B</h3>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="reset" type="button" name="button">Reset</button>
+            <label for="max-score">Max Score</label>
+            <input id="max-score" name="max-score" type="number" value="0" min=0>
+            
+            <div class="btn"> 
+            <button id="minus" class="plusminus" >-</button>
+            <button id="plus" class="plusminus">+</button>       
+            </div>
+
+            
+            <!-- Didn't worked for some reason -->
+<!--            <button class="plusminus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>-->
+<!--            <button class="plusminus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>-->
+
+        </div>
+    </div>
+    <script type="text/javascript" src="score.js"></script>
+</body></html>

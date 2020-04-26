@@ -4,24 +4,36 @@
     <head>
          <meta charset="utf-16" type="text/html"/> <!-- This sets the formatting for the character set. I put 16 for the emojis -->
         <title>Home - Frenzy's Webfolio</title> 
+        <link rel="shortcut icon" type="image/png" href="images/icons8-pastel-64.png">
         <link rel="stylesheet" type="text/css" href="styles/home.css">
-        <script src="scripts/script.js"></script> <!-- Initiate main script (this script is global, so all pages within this project will use some portion of this script) -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Work+Sans&display=swap" rel="stylesheet"> <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/e99c120c11.js" crossorigin="anonymous"></script> <!-- Font Awesome Icons -->
     </head>
     <body>
         
-        <!-- Floating header bar -->
-        <header class="header" role="banner">
-            <h1 class="_title">Frenzy's Webfolio</h1>
+        <div class="banner">
+            <!-- Background Photo -->
+                    
+            <!-- Floating header bar -->
+            <header id="header" class="group" role="banner">
+                
+                <div class="container">
+                    <h1 class="_title">Frenzy</h1>
+                    <nav class="navbar">
+                        <ul id="navigation">
+                            <li><a href="index.html" title="Home"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                            <li><a href="content/random/blog.html" title="Blog"><i class="fa fa-coffee"></i> Blog</a></li>
+                            <li><a href="content/my-projects/my-projects.html" title="My Projects"><i class="fas fa-archive"></i> My Projects</a></li>
+                            <li><a href="content/art/art.html" title="Art"><i class="fas fa-palette"></i> Art</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        
 
-            <a href="">
-                <ul #id="navigation">
-                    <li1><a href="index.html" title="Home">Home</a></li1>
-                    <li2><a href="content/random/random.html" title="Random">Random</a></li2>
-                    <li3><a href="content/my-projects/my-projects.html" title="My Projects">My Projects</a></li3>
-                    <li4><a href="content/art/art.html" title="Art">Art</a></li4>
-                </ul>
-            </a>
-        </header>
 
         <!--My Profile photo -->
         <figure><img id="me" src="images/this-is-me.jpg"></figure>
@@ -29,7 +41,7 @@
         <!-- Me making an awkward intro-->
         <p id="intro">Yeah, this is my first webfolio and also my first attempt to make a website as a noob webdev. Enjoy the cringe :)</p>
 
-        <h3><img class="pixel-ruby" alt="ruby" src="images/ruby.png">Who am I</h3>
+        <h3>Who am I</h3>
 
         <p class="paragraph">
             My name is Angel Garcia (yeah I'm latin, deal with it), I have 20 years old and I started my journey to web development two days before I 
@@ -37,35 +49,111 @@
             website. Currently I'm pursuing my goal of mastering front-end web development, as well as being a professional C#, Python and Java prorgrammer. 
         </p>
             
-        <blockquote>The cringe intensifies</blockquote>
-
-        <div>
+        <h3>Programming Languages I am decent on</h3>
+        <div class="section">
             <ul id="skills">
-                <li><a href=""></a> Python</li>
-                <li><a href=""></a>Java</li>
-                <li><a href=""></a>Javascript</li>
-                <li><a href=""></a>HTML5</li>
-                <li><a href=""></a>CSS</li>
-                <li><a href=""></a>C#</li>
-                <li><a href=""></a>C</li>
+                <li><a href=""></a> 
+                    <ul>
+                        <li class="icon"><i class="fab fa-python"></i></li>
+                        <li>Python</li>
+                    </ul>
+                 </li>
+                <li><a href=""></a>
+                    <ul>
+                        <li class="icon"><i class="fab fa-java"></i></li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li><a href=""></a>
+                    <ul>
+                        <li class="icon"><i class="fab fa-js"></i></li>
+                        <li>Javascript</li>
+                    </ul>
+                </li>
+                <li><a href=""></a>
+                    <ul>
+                        <li class="icon"><i class="fab fa-html5"></i></li>
+                        <li>HTML</li>
+                    </ul>
+                </li>
+                <li><a href=""></a>
+                    <ul>
+                        <li class="icon"><i class="fab fa-css3-alt"></i></li>
+                        <li>CSS</li>
+                    </ul>
+                </li>
+
+                <li><a href=""></a>
+                    <ul>
+                        <li class="icon"><i class="c">C</i></li>
+                        <li>C</li>
+                    </ul>               
+                </li>
             </ul>
         </div>
 
-        <p class="paragarph">
+        <h3>What is this Website</h3>
+
+        <p class="paragraph">
             Here on my webfolio you'll find my projects I've been working on my free time or that I did during university (which of course I remake because 
             the originals were terrible). I also share my art (pixel art), on which I often some inspiration of pro artits azimuth and one of my three favorite 
             games: Hyper Light Drifter. I'm also thinking on making a feedback box where, as the name implies anyone seeing this webpage can give me some helpul 
-            feedback (or roast me to death). This webfolio is also some kind of blog, but for people with no sense of time. Enter Random, where I write either 
+            feedback (or roast me to death). This webfolio is also some kind of blog, but for people with no sense of time. In Blog you'll find either 
             articles about tech, tutorials about a technology I'm currently learning, or simply some random thing that happened to me or my progress on 
             programming or whatever I dunno. You got some black coffee? Anyway don't expect much order over here, nor coerence. I'm tired and sleepy, I should 
             go to bed. Long time I don't read some good manga, should check em. Ok there goes the coerence. What the heck is that noise? Oh, its the dogs fighting 
-            again. Sometimes the neighbors horse also does noise at this time, its been pretty quiet for the last 4 or 5 days. Ok I'm out
+            again. Sometimes the neighbors horse also does noise at this time, its been pretty quiet for the last 4 or 5 days. Ok Imma head out.
         </p>
 
         <!-- Probably webdevs seeing this are arching their fingers wondering how they can murder me after watching my source code :V -->
-        <p class="ps">So, yeah, I kinda make this page in like about a week, which I guess is a lot of time, but I wanna point out I made this on my spare time while studying on college. Also, I'm a surveying engineering students... deal with it</p>
-        <hr>
-    <p><credits>StealMe 2020, Frenzy</credits></p>        
+        <blockquote>So, yeah, I kinda make this page in like about 2 week, which I guess is a lot of time, but I wanna point out I made this on my spare time while studying on college. Also, I'm a surveying engineering student... deal with it</blockquote>
+       
+
+
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="container-center-text">
+
+
+                <!-- Newsletter form -->
+                <form action="mailto:angel.garcia101@outlook.com" class="subscribe-form" method="POST">
+                    <div class="form-outer-container-name">
+                        <div class="control">
+                            <i class="fas fa-user" aria-hidden="true"></i>
+                            <input type="text" class="control-form" placeholder="Name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-outer-container-email">
+                        <div class="control">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <input type="email" class="control-form" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="form-outer-container-buttom">
+                        <input class="button-submit" type="submit" name="" value="Submit">
+                    </div>
+                </form>
+
+                <!-- Social Media stuff -->
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-tumblr-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    <!-- ADD: Github Whatsapp -->
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <hr id="footer-hr">
+                <p class="copyright"> Copyright 2020 Frenzy - MIT License</p>
+                <div class="made-by-me">
+                    <p>Designed with <i class="fa fa-heart-o"></i> By Frenzy</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/script.js"></script> <!-- Initiate main script (this script is global, so all pages within this project will use some portion of this script) -->
     </body>
     
 </html>
