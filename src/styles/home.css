@@ -3,16 +3,19 @@
 */
 
 /* Reset Body */
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0; /* Just in case */
     background-color: #eceff1;
 }
 
 
-
 /* Banner Section - Contains the main top portion of the page */
 .banner {
-    padding: 1rem;
     background: url("../images/mountain");
     height: 30rem;
     color:rgb(25, 73, 76);
@@ -21,15 +24,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -17rem;
-
-    
 }
-
-/* Some stuff that almost works */
-/* .group {
-    position: fixed;
-    width: 100%;
-} */
 
 @media (min-width:1920px){
     .banner {
@@ -53,16 +48,23 @@ body {
     align-items: center;
     display: flex;
     background-color:rgb(25, 73, 76);
-    margin-left: -1rem;
-    margin-right: -1rem;*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 @media (max-width: 800px) {
     .navbar #navigation {
         flex-direction: column;
     }
-    .container {
-        justify-content:space-between;
+    #navigation li {
+        text-align: center;
+        margin: 15px auto;
+        
     }
+    .container {
+        /* justify-content: space-around; */
+        flex-direction: column;
+    }
+
 }
 
 
@@ -135,6 +137,16 @@ body {
 }
 
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topnav (.icon) 
+*/
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
 
 @media screen and (min-width: 720px) {
     .navbar ul {
@@ -189,8 +201,8 @@ h3 {
 #skills {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
     background-color: #37444F;
+    text-align: center;
 
     
     
@@ -200,15 +212,13 @@ h3 {
     #skills {
         flex-direction: column;
     }
-    #skills li {
-        margin-right: 1em;
-    }
+
 }
 
 #skills li {
     display:flex;
     flex-direction: column;
-    padding-right: 1em;
+    padding: 1em;
     color: #eceff1;
 
 }
@@ -219,17 +229,15 @@ h3 {
 
 #skills li ul li {
     display: flex;
-/*     justify-content: center; */
 }
 
-#skills li ul .icon i{
-    font-size: 7em;
+.icon i{
+    font-size: 80px;
 }
 
 /* ---| C Language |--- */
 
 .c {
-    /* font-family: 'Baloo Chettan 2', bold; */
     margin-bottom: -0.1em;
     margin-top: -0.1em;
 }
@@ -265,11 +273,11 @@ blockquote::before {
 /* ---| FOOTER CONTAINER |--- */
 .footer {
     background-image: url(../images/tree.jpeg);
-/*     background-size: cover; */
-    width: 100vw;
+    background-attachment: fixed;
+
     background-position-y: -76rem;
-    position: relative;
-    background-repeat: no-repeat;
+    /* position: relative; */
+    background-repeat: space;
 
     margin-top: 9rem;
     clear: both;
@@ -286,8 +294,6 @@ blockquote::before {
 }
 
 
-
-
 .control {
     width: 100%;
     overflow: hidden;
@@ -296,14 +302,6 @@ blockquote::before {
     margin: 8px 0;
     border-bottom: 1px solid #eceff1;;
 }
-
-
-/* .control-form:focus {
-    border-color: rgb(31, 104, 109);
-    box-shadow: 0 0 8px 0 rgb(31, 104, 109);
-} */
-
-
 
 .control i {
 
@@ -361,12 +359,11 @@ blockquote::before {
 }
 
 
-
-
 #footer-hr{
     width: 50%;
     border: none;
     border-bottom: 1px solid #eceff1;
+    margin: auto;
     
 }
 
@@ -377,21 +374,19 @@ blockquote::before {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    
-    
-    
-    
 }
 
 .footer .container-center-text .social-links li {
     font-size: 3.5rem;
-    padding-left: 1em;
-    
+    margin:auto;
 }
 
 .footer .container-center-text .social-links a {
     /* color: rgb(25, 73, 76); */
     color: #eceff1;
+}
+.footer .container-center-text .social-links a:hover {
+    color: rgba(25, 73, 76, 0.781);
 }
 
 /* ---| FOOTER |--- */
@@ -418,9 +413,63 @@ blockquote::before {
     text-shadow: 1px 1px #37444F;
 }
 
-
-
-
-#Yeet {
-    padding: 1.5rem;
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+#web {
+    display: flex;
+    
+}
+
+#web ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 1rem;
+}
+
+.lst {
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+}
+#python {
+    margin: 1rem;
+}
+
+.lst li{
+    color: #37444F;
+    display: block;
+    width: 500px;
+    font-size: 20/1.5px;
+    font-family: "Work Sans";
+    border-bottom: 1px solid lightgray;
+}
+
+.lst li a {
+    text-decoration: none;
+    color: #37444F;
+
+    /* https://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste/ */
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.lst li:hover {
+
+    font-size: 20px;
+    background-color: rgb(83, 102, 119);
+  }
+  
+.lst li:hover a {
+      color: #f4f4f4;
+  }
+  
+  
+.lst li:last-child {
+      border: none;
+  }
+
