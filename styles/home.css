@@ -1,0 +1,343 @@
+/*
+* Main Stylesheet for all webpages within this project (custom default)
+*/
+
+/* Reset Body */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    padding: 0; /* Just in case */
+    background-color: #eceff1;
+}
+
+/* ---| HEROBAR |--- */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mountain");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-author {
+    text-align: right;
+    position: relative;
+    padding: 1rem;
+    color: #eceff1;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #19494C;
+  background-color: #eceff1;
+  font-size: 'Montserrat';
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #19494C;
+  color: #eceff1;;
+}
+
+/* ---| NAVIGATION BAR TITLE |--- */
+.title {
+  background-color: #ECEFF1;
+  font-family: 'Montserrat';
+  padding: 0.2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin-right: 2rem;
+}
+
+/* ---| NAVIGATION BAR |--- */
+
+.banner {
+    color:rgb(25, 73, 76);
+    margin: auto;
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color:rgb(25, 73, 76);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+    .navbar #navigation {
+        flex-direction: column;
+    }
+    #navigation li {
+        text-align: center;
+        margin: 15px auto;
+        
+    }
+    .banner {
+        flex-direction: column;
+    }
+}
+
+.navbar #navigation {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.navbar #navigation li {
+    line-height: 2em;
+}
+
+.navbar #navigation li a {
+    text-decoration: none;
+    color: #eceff1;
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+    letter-spacing: 0;
+}
+
+/* NAVBAR EFFECTS */
+.navbar #navigation li a:hover, 
+.navbar #navigation li a:active {
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.navbar #navigation li a:after,
+.navbar #navigation li a:before {
+    backface-visibility: hidden;
+    border-bottom: 1px solid  #eceff1;
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}  
+
+.navbar #navigation li a:hover:after,
+.navbar #navigation li a:hover::before {
+    backface-visibility: hidden;
+    border-color: #eceff1;
+    transition: 350ms ease-in-out;
+    width: 100%;
+}
+
+.navbar #navigation li a:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 0%;
+}
+
+#navigation li{
+    padding-right: 2em;
+}
+
+/* ---| PROFILE PICTURE |--- */
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+}
+
+#me {
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border-color: rgb(25, 73, 76);
+    border-width: 0.5rem;
+    border-style: double;   
+}
+
+/* ---| SUBTITLES |--- */
+
+h3 {
+    font-family: 'Montserrat';
+    color:  rgb(25, 73, 76);
+    padding: 1.5em;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.3px
+}
+
+/* ---| PARAGRAPH AND SOME SECTIONS |--- */
+
+p {
+    font-family: "Work Sans";
+    color: #37444F;
+    text-align: center;
+    font-size: 1.15rem;
+    letter-spacing: 0.2px;
+    padding-left: 5.5em;
+    padding-right: 5.5em;
+}
+
+/* ---| BREAK LINE TEXT |--- */
+.dot-hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #37444F;
+    border-width: 6px;
+    width: 20%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* ---| QUOTE TEXT |--- */
+
+blockquote {
+    margin-top: 2rem;
+    
+    color: #ECEFF1;
+    position: relative;
+    font-family: -apple-system, sans-serif;
+    margin-bottom: 1rem;
+    font-family:'Montserrat';
+  }
+
+blockquote::before {
+    position: absolute;
+    margin-left: -0.4em;
+    content: '\201C';
+    top: -20px;
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+}
+
+/* ---| LANGUAGES I KNOW |--- */
+
+.section {
+   display: flex;
+    justify-content: center;
+    } 
+
+#skills {
+    list-style-type: none;
+    display: flex;
+    background-color: #37444F;
+    text-align: center;   
+}
+
+#skills li {
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    color: #eceff1;
+}
+
+#skills li ul {
+    list-style-type: none;
+}
+
+#skills li ul li {
+    display: flex;
+}
+
+.icon i{
+    font-size: 80px;
+}
+
+/* ---| FOOTER CONTAINER |--- */
+.footer {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/tree.jpeg);
+    height: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/* ---| SOCIAL LINKS |--- */
+
+.footer .container-center-text .social-links {
+    padding-top: 1.5em;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links {
+  padding-bottom: 5rem;
+}
+
+.social-links li {
+    margin:auto;
+    overflow: hidden;
+}
+
+.social-links li a {
+  font-size: 3.5rem;
+  color: #ECEFF1;
+  transition: all 0.2s;
+}
+
+.social-links li a:hover {
+  font-size: 4.2rem;
+}
+
+/* ---| FOOTER HR|--- */
+
+#footer-hr{
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid #eceff1;
+    margin: auto;
+    margin-top: 1rem;
+    
+}
+
+/* ---| FOOTER |--- */
+
+.container-center-text {
+  font-family: 'Montserrat';
+  text-align: center;
+  
+}
+
+.footer, .push {
+    padding: 2em;
+}
+
+.copyright {
+    font-size: 0.7em;
+    line-height: 30px;    
+    text-shadow: 1px 1px #37444F;
+    color: #ECEFF1;
+}
+
+.made-by-me p{
+    font-size: 0.8em;
+    line-height: 30px;
+    text-shadow: 1px 1px #37444F;
+    color: #ECEFF1;
+}
