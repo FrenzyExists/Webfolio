@@ -24,6 +24,7 @@ body, html{
   background-size: cover;
   position: relative;
   background-attachment: fixed;
+  min-height: 300px;
 }
 
 .projects {

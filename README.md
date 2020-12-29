@@ -1,0 +1,1 @@
+My name is Frenzy, and welcome to my Web Portfolio! Here you can find links to my other projects and my trinkets as I slowly learn about software, web development, and programming in general. Click over [here](https://frenzyexists.github.io/Webfolio/) to visit my portfolio!
